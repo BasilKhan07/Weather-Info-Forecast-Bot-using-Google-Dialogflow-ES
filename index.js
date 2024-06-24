@@ -4,11 +4,12 @@ const axios = require("axios");
 const moment = require("moment");
 const ngrok = require("ngrok");
 const { WebhookClient } = require("dialogflow-fulfillment");
+require('dotenv').config()
 
 const app = express();
 app.use(bodyParser.json());
 
-const OPENWEATHERMAP_API_KEY = "bc9a94a8df10d265337e308c5e3f0e84";
+OPENWEATHERMAP_API_KEY = process.env.OPENWEATHERMAP_API_KEY
 
 app.post("/webhook", (req, res) => {
   const agent = new WebhookClient({ request: req, response: res });
