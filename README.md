@@ -25,11 +25,11 @@ This project involves creating a Weather Info & Forecast Bot using Google Dialog
 
 ## Architecture
 
-![Architecture Diagram](images/Architecture.png)
+![Architecture Diagram](images/Architecture.PNG)
 
 ### Conversational Flow
 
-![Architecture Diagram](images/conversational.png)
+![Architecture Diagram](images/conversational.PNG)
 
 The bot will follow a defined sequence of interactions to understand the user's request and provide the relevant weather information.
 
